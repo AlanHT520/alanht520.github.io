@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>资源下载</title>
+    <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8">
+    <link rel="shortcut icon" href='tgato.png' />
+    <style>
+        @font-face {
+              font-family: "title";
+              src: url("fonts/title.ttf");
+            }
+        body {
+          font-family:'Roboto', arial, helvetica, sans-serif;
+          font-weight: normal;
+          font-style: normal;
+          font-size: medium;
+          background-image:url('bricks.png');
+        }
+        A {
+          color: #5168CF;
+          text-decoration: none;
+        }
+        h2 {
+          margin-bottom: 0.3em
+        }
+        .tableRoot {
+          margin: 0 auto;
+          min-width: 850px;
+          background-color: white;
+          box-shadow: 0px 0px 20px #CCCCCC;
+          border: 0px solid #808080;
+          /* Use border-spacing instead of border-collapse, otherwise IE doesn't show the shadow */
+          border-spacing:0;
+        }
+        .header {
+          background-color: #000001;
+          padding-bottom: 0.32em;
+        }
+        .headerTitle {
+          font-family:'title';
+          font-size:300%;
+          font-weight:bold;
+          padding-left: 20px;
+          padding-right: 40px;
+          line-height: 1.3em;
+        }
+        .headerTitle A {
+          color: #F0F3FF;
+          text-decoration: none;
+        }
+        .headerNav {
+          text-align: left;
+          background-color: #000001;
+          border-width: 0px;
+          margin-left: 0px
+        }
+        .headerNav A {
+          color: #F0F3FF;
+          text-decoration: none;
+          padding-left: 1em;
+          padding-right: 1em;
+          padding-top: 0.3em;
+          padding-bottom: 0.3em;
+        }
+        .headerNav A:hover {
+          background-color: #bcbcbc;
+          transition: .25s;
+          text-decoration: none;
+        }
+        .content {
+          padding: 18px;
+          padding-top: 10px;
+          text-align: left;
+          text-indent: 0px;
+          margin: 10px;
+        }
+        .content A:hover {
+        }
+        .footer {
+          font-size:small;
+          text-align: right;
+          background-color: #5a5a5a;
+          padding-left: 0.3em;
+          padding-right: 0.3em;
+          padding-top: 0.5em;
+          padding-bottom: 0.5em;
+        }
+        .footerIcon {
+        }
+        .footerIcon IMG {
+          margin-bottom: -0.3em;
+          margin-right: 0.7em;
+          width: 1.2em;
+          height: 1.2em;
+        }
+        .footerText A {
+          text-decoration: none;
+          padding-left: 0.7em;
+          padding-right: 0.7em;
+          padding-top: 0.2em;
+          padding-bottom: 0.2em;
+          color: #F0F3FF;
+        }
+        .footerText A:hover {
+          text-decoration: none;
+          background-color: #bcbcbc;
+          transition: .25s;
+          color: #F0F3FF;
+        }
+        .downloads {
+          width: 100%
+        }
+        .spoilerLink {
+          line-height: 200%;
+        }
+        .showAll {
+          text-align: center;
+          margin-top: 2em;
+        }
+        .downloadTable {
+          border-collapse: collapse;
+          width: auto;
+          line-height: 200%;
+        }
+        .downloadLine {
+        }
+        /* Columns */
+        .downloadLine .colFile {
+          width: 270px;
+          padding-left: 10px;
+        }
+        .downloadLine .colDownload A,
+        .downloadButton A {
+          width: 80px;
+          text-align: center;
+          padding-left: 1em;
+          padding-right: 1em;
+          padding-top: 0.2em;
+          padding-bottom: 0.2em;
+          border: 1px solid #9d95ff;
+        }
+        .downloadLine .colShuxing {
+          width: 100px;
+          text-align: center;
+        }
+        .downloadLine .colChangelog {
+          width: 80px;
+          text-align: center;
+        }
+        .downloadLine .colOptiFine {
+          width: 155px;
+          text-align: center;
+        }
+        .downloadLine .colDate {
+          width: 80px;
+          text-align: right;
+          padding-right: 10px;
+        }
+        /* Preview */
+        .downloadLinePreview {
+          background-color: #fff3f2
+        }
+        /* Main */
+        .downloadLineMain:first-child {
+          background-color: #FFEBCD
+        }
+        .downloadLineMain:first-child .colDownload  A,
+        .downloadButton A{
+          font-weight: normal;
+          color: white;
+          background-color: #ffcb5a;
+          border: 1px solid #ffcb5a;
+        }
+        .downloadLineMain:first-child .colDownload A:hover,
+        .downloadButton A:hover{
+          background-color: #ecede1;
+          transition: .25s;
+        }
+        LI STRONG {
+          line-height: 200%;
+        }
+        .tableDownload {
+          margin: 0 auto;
+        }
+        .tableDonate TR {
+          height: 35px;
+        }
+        .scaleNearest {
+          image-rendering:optimizeSpeed;
+          image-rendering:-moz-crisp-edges;
+          image-rendering:-o-crisp-edges;
+          image-rendering:-webkit-optimize-contrast;
+          image-rendering:optimize-contrast;
+          -ms-interpolation-mode:nearest-neighbor;
+          image-rendering:pixelated;
+        }
+        .tableData {
+          border-collapse: collapse;
+        }
+        .tableData th {
+          color: #F0F3FF;
+          background-color: #000001;
+          font-weight: normal;
+        }
+        .tableData, .tableData th, .tableData td {
+          border: 0px solid black;
+        }
+        .tableData th, .tableData td {
+          padding-left:10px;
+          padding-right:10px;
+          padding-top:5px;
+          padding-bottom:5px;
+        }
+        .tableDataDis {
+          background-color: #DCDCDC
+        }
+        .tableDataIcon {
+          width: 1.5em;
+          height: 1.5em;
+        }
+        .tableDataCape {
+          max-height: 44px;
+        }
+        .tableDataCentered {
+          text-align: center;
+        }
+        .tableBanner {
+          width: 100%;
+          padding: 8px;
+        }
+        .tableBanner TR {
+          text-align: center;
+          margin: 0.3em;
+        }
+        .tableBanner TD {
+          padding-top: 1em;
+        }
+        .tableBanner IMG {
+          border: 1px solid #f0f0f0;
+        }
+        .tableBanner TD * {
+          margin: 0.3em;
+        }
+        .tableBanners TR TD {
+          padding: 9px;
+          padding-right: 8px;
+        }
+        .tableBanners IMG {
+          border: 1px solid #f0f0f0;
+        }
+        .bannerSelTable {
+          width: 100%;
+        }
+        .bannerSelUser {
+          text-align: right;
+        }
+        .bannerNav {
+          text-align: center;
+        }
+        .bannerNav * {
+          margin: 0.3em;
+        }
+        TD .tableDataEditable {
+          background-color: #FFF6E3;
+          border: 2px solid transparent;
+        }
+        input,
+        select {
+          font-family:'Roboto', arial, helvetica, sans-serif;
+          font-weight: normal;
+          font-style: normal;
+          font-size: medium;
+          padding: 2px;
+        }
+        input[type=submit] {
+          padding-left: 1em;
+          padding-right: 1em;
+          padding-top: 0.2em;
+          padding-bottom: 0.2em;
+        }
+        input[type=checkbox] {
+          transform : scale(1.3);
+        }
+    </style>
+</head>
+<body>
+<table class="tableRoot">
+    <tbody>
+    <tr>
+        <td class="header">
+            <span class="headerTitle">
+                <a href="index.html">
+                    TGATO
+                </a>
+            </span>
+            <span class="headerNav">
+                <a href="index.html">
+                    主页
+                </a>
+                <a href="history.html">
+                    历史沿革
+                </a>
+                <a href="donate.html">
+                    赞助
+                </a>
+                <a href="faq.html">
+                    问题
+                </a>
+                <a href="downloads.html">
+                    资源下载
+                </a>
+            </span>
+        </td>
+    </tr>
+    <tr>
+            <span class="downloads">
+              <script type='text/javascript'>
+                function showSpoiler(elemId, linkId, hideLink)
+                {
+                  var elem = document.getElementById(elemId);
+                  var link = document.getElementById(linkId);
+                  if (elem.style.position == 'absolute')
+                  {
+                    elem.style.position = 'static';
+                    elem.style.visibility = 'visible';
+                    elem.style.opacity = '1';
+                    link.innerHTML = link.innerHTML.replace("+", "-");
+                  }
+                  else
+                  {
+                    elem.style.position = 'absolute';
+                    elem.style.visibility = 'hidden';
+                    elem.style.opacity = '0';
+                    link.innerHTML = link.innerHTML.replace("-", "+");
+                  }
+                  if(hideLink)
+                    link.innerHTML = ("");
+                }
+          </script>
+            </span>
+        <td class="content">
+            <!-- Content -->
+            <h2>
+                思想政治
+            </h2>
+            <h6>
+                -政治学习资料
+            </h6>
+            <!-- Previews -->
+            <!-- Version -->
+            <table class='downloadTable mainTable'>
+                <tr class='downloadLine downloadLinePreview'>
+                    <td class='colFile'>中国特色社会主义</td>
+                    <td class='colDownload'><a href="https://pan.baidu.com/s/171Td7f3py126xTtx_kSVdA?pwd=gato">下载</a></td>
+                    <td class='colShuxing'>· 政治 ·</td>
+                    <td class='colChangelog'>思想政治</td>
+                    <td class='colOptiFine'>必修一</td>
+                    <td class='colDate'>2024.02.01</td>
+                </tr>
+            </table>
+
+
+            <!-- Old -->
+
+            <a class="spoilerLink" id="link1205" href="javascript:showSpoiler('more1205', 'link1205', 'true');">+ 更多</a>
+            <div id="more1205" style='position: absolute; visibility: hidden; opacity: 0; transition: opacity 0.5s;'>
+                暂无更多内容
+            </div>
+
+            <h2>
+                历史
+            </h2>
+            <h6>
+                -历史学习资料
+            </h6>
+            <!-- Previews -->
+            <!-- Version -->
+            <table class='downloadTable mainTable'>
+                <tr class='downloadLine downloadLinePreview'>
+                    <td class='colFile'>中外历史纲要</td>
+                    <td class='colDownload'><a href="https://www.bilibili.com/video/BV1va411w7aM/">下载</a></td>
+                    <td class='colShuxing'>· 历史 ·</td>
+                    <td class='colChangelog'>中国历史</td>
+                    <td class='colOptiFine'>必修一</td>
+                    <td class='colDate'>2024.02.01</td>
+                </tr>
+            </table>
+            <!-- Old -->
+            <a class="spoilerLink" id="link1204" href="javascript:showSpoiler('more1204', 'link1204', 'true');">+ 更多</a>
+            <div id="more1204" style='position: absolute; visibility: hidden; opacity: 0; transition: opacity 0.5s;'>
+                暂无更多内容
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
