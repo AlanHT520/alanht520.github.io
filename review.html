@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>小天狼星</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/Swiper/9.4.1/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&family=Nunito+Sans:wght@300;400;600;700&display=swap"
+            rel="stylesheet">
+
+    <!-- script
+	================================================== -->
+    <script src="js/modernizr.js"></script>
+
+</head>
+
+<style>
+    .downloads {
+        width: 100%
+    }
+    .spoilerLink {
+        line-height: 200%;
+    }
+    .showAll {
+        text-align: center;
+        margin-top: 2em;
+    }
+    .downloadTable {
+        border-collapse: collapse;
+        width: auto;
+        line-height: 200%;
+    }
+    .downloadLine {
+    }
+    /* Columns */
+    .downloadLine .colFile {
+        width: 270px;
+        padding-left: 10px;
+    }
+    .downloadLine .colDownload A,
+    .downloadButton A {
+        width: 80px;
+        text-align: center;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        border: 1px solid #5168CF;
+    }
+    .downloadLine .colMirror {
+        width: 100px;
+        text-align: center;
+    }
+    .downloadLine .colChangelog {
+        width: 110px;
+    }
+    .downloadLine .colForge {
+        width: 115px;
+    }
+    .downloadLine .colDate {
+        width: 80px;
+        text-align: right;
+        padding-right: 10px;
+    }
+    /* Preview */
+    .downloadLinePreview {
+        background-color: #FFF6E3
+    }
+    /* Main */
+    .downloadLineMain:first-child {
+        background-color: #F0F3FF
+    }
+    .downloadLineMain:first-child .colDownload  A,
+    .downloadButton A{
+        font-weight: normal;
+        color: white;
+        background-color: #313E7C;
+        border: 1px solid #313E7C;
+    }
+    .downloadLineMain:first-child .colDownload A:hover,
+    .downloadButton A:hover{
+        background-color: #6974A3;
+        transition: .25s;
+    }
+    LI STRONG {
+        line-height: 200%;
+    }
+    .tableDownload {
+        margin: 0 auto;
+    }
+</style>
+
+<body data-bs-spy="scroll" data-bs-target="#navigation-bar" tabindex="0">
+
+<div class=" offcanvas-btn text-end m-3">
+    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"><iconify-icon icon="ci:hamburger-lg"
+                                                         style="font-size: 30px;"></iconify-icon></button>
+</div>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <header class="hero position-fixed">
+            <div class="container hero-container text-center align-content-between">
+
+                <div>
+                    <img src="images/carlbrown.png" class="hero-img mb-4 rounded-circle" alt="Bootstrap Themes"
+                         width="140" height="140" loading="lazy">
+
+
+                    <h2 class="fw-bold mt-3">AlanHT520</h2>
+                    <p>
+                        AlanHT520,原名张浩天,社交ID:小天狼星,于河北平山实验中学就读高一,23-11班英语及信息技术课代表,擅长Java语言及幻灯片设计
+                    </p>
+                    <div class="social-icon my-3">
+                        <p>
+                            <a class="social-link mx-3 active" href="#"> <iconify-icon
+                                    icon="icomoon-free:facebook"></iconify-icon> </a>
+                            <a class="social-link mx-3 " href="#"> <iconify-icon
+                                    icon="icomoon-free:instagram"></iconify-icon> </a>
+                            <a class="social-link mx-3 " href="#"> <iconify-icon
+                                    icon="icomoon-free:twitter"></iconify-icon> </a>
+                            <a class="social-link mx-3 " href="#"> <iconify-icon
+                                    icon="icomoon-free:youtube"></iconify-icon> </a>
+                        </p>
+
+                    </div>
+
+                    <h4 class=" text-uppercase text-light fs-5 fw-bold py-2 mx-5 mt-5">专业页面</h4>
+
+                    </div>
+
+                    <ul class="text-center list-unstyled">
+                        <li><a href="blog-single.html" class="text-uppercase ">新鲜事
+                            <span class="badge bg-secondary">Pro</span></a></li>
+                        <li><a href="contact.html" class="text-uppercase ">联系我 <span
+                                class="badge bg-secondary">Pro</span></a></li>
+                        <li><a href="alanht520.github.io/sirius.net" class="text-uppercase ">Sirius Lr Studio<span
+                                class="badge bg-secondary">Pro</span></a></li>
+                        <li><a href="review.html" class="text-uppercase ">资源中心 <span
+                                class="badge bg-secondary">Pro</span></a></li>
+                        <li><a href="faq.html" class="text-uppercase ">问题 <span
+                                class="badge bg-secondary">Pro</span></a></li>
+                    </ul>
+
+                    <div>
+                        <a href="#"
+                           class="btn btn-primary get-pro text-uppercase rounded-5 py-3 px-4 mt-2">Botton <iconify-icon icon="mdi:cart" class="ps-2" style="color: white;"></iconify-icon>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="mb-5">
+                    <p class="copyright ">© 小天狼星 </p>
+                </div>
+
+
+            </div>
+        </header>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    <div class="row">
+
+        <section id="navigation-bar" class="navigation position-fixed ">
+
+
+            <ul class="nav nav-pills text-center align-items-center mt-5 ms-xl-5 ms-3 ">
+                <li>
+                    <a href="index.html#home" class="nav-link active rounded-0" aria-current="page" data-bs-toggle="tooltip"
+                       data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">
+                        <img src="images/home.png" width="48">
+
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#about" class="nav-link rounded-0" data-bs-toggle="tooltip" data-bs-placement="right"
+                       aria-label="Dashboard" data-bs-original-title="Dashboard">
+                        <img src="images/about.png" width="48">
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#resume" class="nav-link rounded-0" data-bs-toggle="tooltip" data-bs-placement="right"
+                       aria-label="Orders" data-bs-original-title="Orders">
+                        <img src="images/skill.png" width="48">
+                    </a>
+                </li>
+                <li>
+                    <a href="review.html" class="nav-link rounded-0" data-bs-toggle="tooltip"
+                       data-bs-placement="right" aria-label="Products" data-bs-original-title="Products">
+                        <img src="images/re.png" width="48">
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#blog" class="nav-link rounded-0" data-bs-toggle="tooltip" data-bs-placement="right"
+                       aria-label="Customers" data-bs-original-title="Customers">
+                        <img src="images/blog.png" width="48">
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#contact" class="nav-link rounded-0" data-bs-toggle="tooltip" data-bs-placement="right"
+                       aria-label="Customers" data-bs-original-title="Customers">
+                        <img src="images/phone.png" width="48">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <div class="col-xl-6 offset-xl-2">
+            <div class="container content-container">
+
+                <section id="review">
+                    <div class="py-4 my-4 ">
+                        <h1 class="fw-bold mt-lg-5">资源中心</h1>
+                    </div>
+
+                    <hr class="mid-break my-2">
+
+                    <div style="overflow: hidden;">
+                        <div class="container-fluid" data-aos="zoom-out">
+                            <div class="container my-5 py-5">
+                                <h2 class="fw-bold text-uppercase mb-5 ">值日表1.0</h2>
+                                <p>作者:封英英</p>
+                                <embed src="download/zrb.pdf" type="application/pdf" width="500" height="600" />
+                                <h3>可修改值日表模板</h3>
+                                <a href="download/zrbmb.zip" download="zrbmb.zip">压缩下载</a>
+                                <p></p>
+                                <a href="download/zrbmb.docx" download="zrbmb.docx">直接下载</a>
+                        </div>
+                            <div class="container-fluid" data-aos="zoom-out">
+                                <div class="container my-5 py-5">
+                                    <h2 class="fw-bold text-uppercase mb-5 ">音乐</h2>
+                                    <h4>1 · 去月球</h4>
+                                    <audio controls>
+                                        <source src="sound/born.mp3" type="audio/mp3">
+                                    </audio>
+                                    <h4>2 · 云村的告别</h4>
+                                    <audio controls>
+                                        <source src="sound/cloud.mp3" type="audio/mp3">
+                                    </audio>
+                                    <h4>3 · Every Where We Go</h4>
+                                    <audio controls>
+                                        <source src="sound/every.mp3" type="audio/mp3">
+                                    </audio>
+                                    <h4>4 · 左手右手</h4>
+                                    <audio controls>
+                                        <source src="sound/help.mp3" type="audio/mp3">
+                                    </audio>
+                                    <h4>5 · PIANO</h4>
+                                    <audio controls>
+                                        <source src="sound/nop.mp3" type="audio/mp3">
+                                    </audio>
+                                    <h2 class="fw-bold text-uppercase mb-5 ">音频</h2>
+                                    <h4>· 可用Alarm音频</h4>
+                                    <audio controls>
+                                        <source src="sound/alarm.mp3" type="audio/mp3">
+                                    </audio>
+                                    <h4>Video · 宇宙大小</h4>
+                                    <video controls>
+                                        <source src="video/yuzhou.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                    </div>
+                        <div class="container-fluid" data-aos="zoom-out">
+                            <div class="container my-5 py-5">
+                                <h2 class="fw-bold text-uppercase mb-5 ">2024.04.21考生</h2>
+                                <h4>监考员:张浩天</h4><p> </p>
+                                <img src="images/cute.jpg" width="394"><p>考生:刘艳霞</p>
+                            </div>
+                </section>
+
+            </div>
+        </div>
+
+        <div class="hero-sidebar col-xl-3 offset-xl-1">
+            <header class="hero position-fixed">
+                <div class="container hero-container text-center my-4 pt-3 align-content-between">
+
+                    <div>
+                        <img src="images/carlbrown.png" class="hero-img mb-4 rounded-circle" alt="Bootstrap Themes"
+                             width="140" height="140" loading="lazy">
+
+
+                        <h2 class="fw-bold mt-3">AlanHT520</h2>
+                        <p>
+                            AlanHT520,原名张浩天,社交ID:小天狼星,于河北平山实验中学就读高一,23-11班英语及信息技术课代表,擅长Java语言及幻灯片设计
+                        </p>
+                        <div class="social-icon my-3">
+                            <p>
+                                <a class="social-link mx-3 active" href="#"> <iconify-icon
+                                        icon="icomoon-free:facebook"></iconify-icon> </a>
+                                <a class="social-link mx-3 " href="#"> <iconify-icon
+                                        icon="icomoon-free:instagram"></iconify-icon> </a>
+                                <a class="social-link mx-3 " href="#"> <iconify-icon
+                                        icon="icomoon-free:twitter"></iconify-icon> </a>
+                                <a class="social-link mx-3 " href="#"> <iconify-icon
+                                        icon="icomoon-free:youtube"></iconify-icon> </a>
+                            </p>
+
+                        </div>
+
+                        <h4 class=" text-uppercase text-light fs-5 fw-bold py-2 mx-5 mt-5">专业页面</h4>
+
+                        <ul class="text-center list-unstyled">
+                            <li><a href="blog-single.html" class="text-uppercase ">新鲜事
+                                <span class="badge bg-secondary">Pro</span></a></li>
+                            <li><a href="contact.html" class="text-uppercase ">联系我 <span
+                                    class="badge bg-secondary">Pro</span></a></li>
+                            <li><a href="https://alanht520.github.io/sirius.net" class="text-uppercase ">Sirius Lr <span
+                                    class="badge bg-secondary">Pro</span></a></li>
+                            <li><a href="review.html" class="text-uppercase ">资源中心 <span
+                                    class="badge bg-secondary">Pro</span></a></li>
+                            <li><a href="faq.html" class="text-uppercase ">问题 <span
+                                    class="badge bg-secondary">Pro</span></a></li>
+                        </ul>
+
+                        <div>
+                            <a href="#"
+                               class="btn btn-primary get-pro text-uppercase rounded-5 py-3 px-4 mt-3">返回 <iconify-icon icon="mdi:cart" class="ps-2" style="color: white;"></iconify-icon>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="mb-5">
+                        <p class="copyright ">© 小天狼星 </p>
+                    </div>
+
+
+                </div>
+            </header>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.2.3/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/Swiper/9.4.1/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
