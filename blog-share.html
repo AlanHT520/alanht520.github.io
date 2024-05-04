@@ -25,7 +25,11 @@
     <!-- script
 	================================================== -->
     <script src="js/modernizr.js"></script>
-
+    <style>
+        table,table tr th, table tr td {
+        border:2px solid #ccc;
+ }
+    </style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navigation-bar" tabindex="0">
@@ -147,7 +151,6 @@
                         </a>
                     </li>
                 </ul>
-
             </section>
 
             <div class="col-xl-6 offset-xl-2">
@@ -156,7 +159,7 @@
                     <section id="blog-single">
 
                         <div class="py-4 my-4 ">
-                            <h1 class="fw-bold mt-lg-5">新鲜事[博客]</h1>
+                            <h1 class="fw-bold mt-lg-5">[博客]</h1>
                         </div>
 
                         <hr class="mid-break my-2">
@@ -167,12 +170,11 @@
                                     <div class="">
 
                                         <section class="pt-5 mt-5" data-aos="fade-up">
-                                            <p class="meta-date">2024.05.02 <img src="images/Ellipse 7.png"
-                                                    alt="image">
-                                                <a class="open-description"> In Home</a>
+                                            <p class="meta-date">2018.11.23 <img src="images/Ellipse 7.png" alt="image">
+                                                <a class="open-description"> Software & Hardware</a>
                                             </p>
 
-                                            <h3 class="display-4 fw-bold">利用信息技术制作三角函数表</h3>
+                                            <h3 class="display-4 fw-bold">软件分类与常见设备</h3>
 
                                         </section>
 
@@ -180,11 +182,68 @@
 
                                             <div class="post-content py-5">
                                                 <div class="post-description">
-                                                    <p class="" id="20240430">
-                                                        <p>
-                                                            在2023年12月,我尝试用Java语言编写代码,来解决人教版数学课本必修第一册A版第224页的"信息技术应用",即"用信息技术制作三角函数表",他给出了程序框图,我就按照他给的程序框图编写代码,可能这是适用于Python语言的程序框图,用Java语言编写很不顺利,几乎每次运行都会报错,所以,我不认为它可以实现,过了许久,在2024年5月2日,我尝试重新编写了这段代码,我发现了其中的问题,上次我将所有的浮点类(小数)都定为"float",但它的范围很小,在我将它转换为"double"类型的时候,程序就成功运行了,若你想修改它,您可以点击<a href="download/math.zip">下载</a>来下载程序源代码以及编译后的文件。
-                                                        </p>
+                                                    <p class="" id="20210203">
+                                                    <section id="guanjianzi">
+                                                    <h2>
+                                                        软件分类
+                                                    </h2><p> </p>
+                                                    <h3>
+                                                        · 系统软件
+                                                    </h3>
+                                                    <p>
+                                                        · 操作系统:控制和管理计算机硬件资源,提供用户与计算机系统之间的交互界面。<br />
+                                                        · 驱动程序:用于管理和控制硬件设备,与操作系统紧密配合,使硬件设备能够与计算机通信和协同工作。
                                                     </p>
+                                                    <h3>
+                                                        · 应用软件
+                                                    </h3>
+                                                    <p>
+                                                        · 应用软件是为特定任务和需求开发的程序,用于实现用户所需的功能和应用。
+                                                    </p>
+                                                    <h2>
+                                                        常见设备
+                                                    </h2>
+                                                    <p> </p>
+                                                    <h3>
+                                                        · 中央处理器CPU
+                                                    </h3>
+                                                    <p>
+                                                        电子计算机的主要设备之一,电脑中的核心配件。其功能主要是解释计算机指令以及处理计算机软件中的数据。
+                                                    </p>
+                                                    <h5>
+                                                        CPU基层架构[桌面端]:<br />
+                                                    </h5>
+                                                    <h6>
+                                                        · IA-32<br />
+                                                        · x86-64
+                                                    </h6>
+                                                    <h5>
+                                                        CPU基层架构[移动端]:<br />
+                                                    </h5>
+                                                    <h6>
+                                                        · ARMv7<br />
+                                                        · ARM64(ARMv8)
+                                                    </h6>
+                                                    <h3>
+                                                        · 图形处理器GPU
+                                                    </h3>
+                                                    <p>
+                                                        图形处理器,又称显卡,是一种专门在个人电脑、工作站、游戏机和一些移动设备（如平板电脑、智能手机等）上做图像和图形相关运算工作的微处理器。
+                                                    </p>
+                                                    <h3>
+                                                        · 随机存储器RAM
+                                                    </h3>
+                                                    <p>
+                                                        随机存储器RAM,也叫内存,是与CPU直接交换数据的内部存储器。它可以随时读写（刷新时除外）,而且速度很快,通常作为操作系统或其他正在运行中的程序的临时数据存储介质。RAM工作时可以随时从任何一个指定的地址写入（存入）或读出（取出）信息。它与ROM的最大区别是数据的易失性,即一旦断电所存储的数据将随之丢失。RAM在计算机和数字系统中用来暂时存储程序、数据和中间结果。
+                                                    </p>
+                                                    <h3>
+                                                        · 只读存储器ROM
+                                                    </h3>
+                                                    <p>
+                                                        只读存储器以非破坏性读出方式工作,只能读出无法写入信息。信息一旦写入后就固定下来,即使切断电源,信息也不会丢失,所以又称为固定存储器。ROM所存数据通常是装入整机前写入的,整机工作过程中只能读出,不像随机存储器能快速方便地改写存储内容。ROM所存数据稳定,断电后所存数据也不会改变,并且结构较简单,使用方便,因而常用于存储各种固定程序和数据。
+                                                    </p>
+                                                    </p>
+                                                </section>
                                                     <div class="post-bottom-link d-md-flex justify-content-between">
                                                 </div>
                                             </div>
