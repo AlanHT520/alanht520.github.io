@@ -7,9 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i%7COpen+Sans:400,700">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
+    <head>
+        <!-- 在字体加载前添加预连接 -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <!-- 添加关键CSS预加载 -->
+        <link rel="preload" href="css/bootstrap.css" as="style">
+        <link rel="preload" href="css/fonts.css" as="style">
+        <link rel="preload" href="css/style.css" as="style">
+
+        <!-- 原有代码保持不变，但调整顺序 -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/style.css">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
   <body>
@@ -47,9 +58,9 @@
                       </li>
                       <li class="rd-nav-item"><a class="rd-nav-link" href="projects.html">PROGECTS</a>
                         <ul class="rd-menu rd-navbar-dropdown">
-                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="projects/Sirius%20Graphics.zip">Sirius Graphics</a>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="sirius.html">Sirius Graphics</a>
                           </li>
-                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="https://cdn.modrinth.com/data/LvYC4SH2/versions/DQh3G08J/AlphaEquipment-0.0.8.jar">Alpha Equipment</a>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="https://modrinth.com/mod/alpha-equipment">Alpha Equipment</a>
                           </li>
                         </ul>
                     </ul>
@@ -97,7 +108,7 @@
           <div class="row offset-top-0 justify-content-lg-end">
             <div class="col-12 col-lg-5 section-lg">
               <div class="row row-20 text-center">
-                <h4 class="wow fadeIn" data-wow-delay=".3s">张浩天,又名張晓臣、AlanHT520 <br>出生日期:2008年1月1日(民國九十七年一月一日)<br>河北平山实验中学高二学生<br>Minecraft Alpha Equipment Mod作者,个人开发者,Java程序员</h4>
+                <h4 class="wow fadeIn" data-wow-delay=".3s">张浩天,又名张晓臣、AlanHT520 <br>出生日期:2008年1月1日(民国九十七年一月一日)<br>河北平山实验中学高二学生<br>Minecraft Alpha Equipment Mod作者,个人开发者,Java程序员</h4>
               </div>
             </div>
           </div>
