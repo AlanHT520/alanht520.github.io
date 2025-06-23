@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">  <!-- 语言属性改为英文 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIRIUS Software License | Applicable to SIRIUS Series Software</title>  <!-- 标题翻译 -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid #eaeaea;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .license-meta {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+
+        .license-meta p {
+            margin: 5px 0;
+        }
+
+        .license-content {
+            background-color: white;
+            border: 1px solid #eaeaea;
+            border-radius: 5px;
+            padding: 30px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .license-content:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background-color: #555;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .license-content h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .license-content h3 {
+            font-size: 1.3rem;
+            margin: 25px 0 15px;
+            color: #444;
+        }
+
+        .license-content p {
+            margin-bottom: 15px;
+        }
+
+        .license-content ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .license-content li {
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            background-color: #fffae6;
+            padding: 10px 15px;
+            border-left: 3px solid #ffcc00;
+            margin: 20px 0;
+        }
+
+        .note-box {
+            background-color: #e6f7ff;
+            border: 1px solid #91d5ff;
+            border-radius: 4px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .note-box h4 {
+            color: #0050b3;
+            margin-bottom: 10px;
+        }
+
+        .code-block {
+            background-color: #f8f8f8;
+            border: 1px solid #eaeaea;
+            padding: 15px;
+            font-family: monospace;
+            overflow-x: auto;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #eaeaea;
+            margin-top: 30px;
+        }
+
+        .license-actions {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #555;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #333;
+        }
+
+        .btn-download {
+            background-color: #1890ff;
+        }
+
+        .btn-download:hover {
+            background-color: #096dd9;
+        }
+
+        .compatibility {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .compatibility-item {
+            text-align: center;
+            flex: 1;
+            padding: 10px;
+        }
+
+        .compatibility-item .status {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .allowed .status {
+            color: #52c41a;
+        }
+
+        .not-allowed .status {
+            color: #f5222d;
+        }
+
+        .compatibility-item .label {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .license-content {
+                padding: 20px;
+            }
+
+            .license-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .compatibility {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>SIRIUS Software License</h1>  <!-- 主标题翻译 -->
+    <div class="subtitle">Applicable to all SIRIUS series software</div>  <!-- 副标题翻译 -->
+</header>
+
+<div class="license-meta">
+    <p><strong>Version:</strong> v1.0</p>  <!-- 版本翻译 -->
+    <p><strong>Issue Date:</strong> January 15, 2024</p>  <!-- 创建日期翻译（格式调整） -->
+    <p><strong>Author:</strong> Zhang Haotian</p>  <!-- 作者翻译 -->
+    <p><strong>Applicable Software:</strong> SIRIUS Series Software</p>  <!-- 适用软件翻译 -->
+</div>
+
+<div class="license-content">
+    <h2>SIRIUS Software License v1.0</h2>  <!-- 许可证标题翻译 -->
+
+    <h3>1. Granted Rights</h3>  <!-- 章节标题翻译 -->
+
+    <p><strong>1.1 Distribution Rights</strong>: You are permitted to distribute this software in its original, unmodified form, provided the following conditions are met:</p>  <!-- 条款翻译 -->
+    <ul>
+        <li>Prominently retain the original author's declaration in any distributed copies (including but not limited to copyright information in splash screens, documentation, and code comments);</li>  <!-- 列表项翻译 -->
+        <li>Include this license document.</li>
+    </ul>
+
+    <p><strong>1.2 Modification Rights</strong>: You are permitted to modify the software source code, but modified versions are <strong>for personal use only</strong> and <strong>prohibited from public distribution in any form</strong> (including but not limited to patch files and code repositories).</p>  <!-- 条款翻译 -->
+
+    <p><strong>1.3 Suggestion Obligation</strong>: If modified code contains functional improvements, <strong>you are encouraged (but not required)</strong> to submit improvement suggestions to the original author via email/Issue or other methods.</p>  <!-- 条款翻译 -->
+
+    <h3>2. Strictly Prohibited Clauses</h3>  <!-- 章节标题翻译 -->
+
+    <p><strong>2.1 Prohibition of Modified Version Distribution</strong>: Any derivative versions based on this software (including partially modified code) shall not be publicly disseminated or used for commercial purposes.</p>  <!-- 条款翻译 -->
+
+    <p><strong>2.2 Resource Ownership Declaration</strong>: All <strong>non-code resources</strong> within the software (including but not limited to textures, sound effects, models, text, icons, and configuration files) are private property of the author. The following actions are <strong>prohibited</strong>:</p>  <!-- 条款翻译 -->
+    <ul>
+        <li>Extracting and using in other projects</li>  <!-- 列表项翻译 -->
+        <li>Modifying and redistributing</li>
+        <li>Commercial exploitation</li>
+    </ul>
+
+    <h3>3. Disclaimer of Liability</h3>  <!-- 章节标题翻译 -->
+    <p>This software is provided "as is," and the author assumes no direct or indirect liability. Users shall bear all risks themselves.</p>  <!-- 条款翻译 -->
+
+    <h3>4. Termination of Authorization</h3>  <!-- 章节标题翻译 -->
+    <p>In the event of a breach of this agreement, authorization shall terminate automatically, and the user must destroy all copies.</p>  <!-- 条款翻译 -->
+
+    <div class="highlight">
+        <p>📝 <strong>License Summary:</strong> This license permits free distribution of the original software version but prohibits distribution of any modified versions. All non-code resources are the private property of the author.</p>  <!-- 摘要翻译 -->
+    </div>
+
+    <div class="note-box">
+        <h4>⚠️ Important Notes</h4>  <!-- 提示标题翻译 -->
+        <p>1. <strong>Legal Validity:</strong> Consult a lawyer to ensure enforceability of the terms</p>  <!-- 提示内容翻译 -->
+        <p>2. <strong>Conflicting Clauses:</strong> The requirement "modified versions cannot be distributed" conflicts with common modpack ecosystems (which often require minor adjustments for compatibility)</p>
+        <p>3. <strong>Alternative Proposal:</strong> For broader adoption, consider the following more permissive option:</p>
+        <div class="code-block">
+            // More permissive option (balancing dissemination and protection):
+            - Code under MIT License (permits free modification/distribution with attribution)
+            - Non-code resources under CC BY-NC-ND 4.0 (prohibits commercial use, modification, requires attribution)
+        </div>  <!-- 代码块内容翻译 -->
+    </div>
+</div>
+
+<div class="compatibility">
+    <div class="compatibility-item allowed">
+        <div class="status">✓</div>
+        <div class="label">Distribute Original Version</div>  <!-- 标签翻译 -->
+    </div>
+    <div class="compatibility-item not-allowed">
+        <div class="status">✗</div>
+        <div class="label">Distribute Modified Version</div>  <!-- 标签翻译 -->
+    </div>
+    <div class="compatibility-item not-allowed">
+        <div class="status">✗</div>
+        <div class="label">Reuse Non-Code Resources</div>  <!-- 标签翻译 -->
+    </div>
+</div>
+
+<div class="license-content">
+    <h3>📝 Implementation Steps</h3>  <!-- 步骤标题翻译 -->
+    <p>1. Save the license text as a <code>LICENSE.txt</code> file</p>  <!-- 步骤内容翻译 -->
+    <p>2. Clearly mark in the software:</p>
+    <div class="code-block">
+        // Add to the header of code files
+        /*
+        * Copyright (c) 2024 Zhang Haotian
+        * This software's code is governed by the SIRIUS Software License v1.0
+        * Resource assets (textures/sound effects, etc.) are private property of the author and prohibited from reuse without authorization
+        */
+    </div>  <!-- 代码块内容翻译 -->
+    <p>3. Declare resource protection clauses in prominent positions on the release page</p>  <!-- 步骤内容翻译 -->
+
+    <h3>💡 Practical Impact Examples</h3>  <!-- 示例标题翻译 -->
+    <ul>
+        <li>✅ <strong>Allowed:</strong> Users distributing the <strong>software</strong></li>  <!-- 示例内容翻译 -->
+        <li>❌ <strong>Prohibited:</strong> Releasing "modified versions" after moding</li>
+        <li>❌ <strong>Prohibited:</strong> Extracting images/sound effects from the software for use in other programs</li>
+    </ul>
+</div>
+
+<footer>
+    <p>© 2024 Zhang Haotian | SIRIUS Software License v1.0</p>  <!-- 页脚翻译 -->
+</footer>
+</body>
+</html>
